@@ -1,0 +1,74 @@
+package employe;
+import java.util.*;
+
+public class Employe {
+	private String nom;
+	private String prenom;
+	private String String_naissance;
+	
+	/**
+	 * @param nom
+	 * @param prenom
+	 * @param String_naissance
+	 */
+	public Employe(String nom, String prenom, String String_naissance) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.String_naissance = String_naissance;
+	}
+	
+	public Double calculSalaire(Double sal) {
+		return sal*1;
+	}
+
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @return the prenom
+	 */
+	public String getPrenom() {
+		return prenom;
+	}
+
+	/**
+	 * @param prenom the prenom to set
+	 */
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	/**
+	 * @return the String_naissance
+	 */
+	public String getString_naissance() {
+		return String_naissance;
+	}
+
+	/**
+	 * @param String_naissance the String_naissance to set
+	 */
+	public void setString_naissance(String String_naissance) {
+		this.String_naissance = String_naissance;
+	}
+
+	@Override
+	public String toString() {
+		return "\t\t\tNom : " + nom + "\n\t\t\tPrenom :" + prenom + 
+				"\n\t\t\tString de naissance : " + String_naissance.toString();
+	}
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package Employe_salary;
+
+public class EmployeFixe extends Employe{
+	
+	private Double salaire;
+
+	public EmployeFixe(String nom, String prenom, String dateNaissance, Double salaire) {
+		super(nom, prenom, dateNaissance);
+		this.salaire = salaire;
+	}
+	
+	
+}

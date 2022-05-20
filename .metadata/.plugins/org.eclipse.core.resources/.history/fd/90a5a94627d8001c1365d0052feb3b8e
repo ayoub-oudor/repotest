@@ -1,0 +1,74 @@
+package employe;
+import java.util.*;
+
+public class Employe {
+	private String nom;
+	private String prenom;
+	private Date date_naissance;
+	
+	/**
+	 * @param nom
+	 * @param prenom
+	 * @param date_naissance
+	 */
+	public Employe(String nom, String prenom, Date date_naissance) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.date_naissance = date_naissance;
+	}
+	
+	public Double calculSalaire(Double sal) {
+		return sal*1;
+	}
+
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @return the prenom
+	 */
+	public String getPrenom() {
+		return prenom;
+	}
+
+	/**
+	 * @param prenom the prenom to set
+	 */
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	/**
+	 * @return the date_naissance
+	 */
+	public Date getDate_naissance() {
+		return date_naissance;
+	}
+
+	/**
+	 * @param date_naissance the date_naissance to set
+	 */
+	public void setDate_naissance(Date date_naissance) {
+		this.date_naissance = date_naissance;
+	}
+
+	@Override
+	public String toString() {
+		return "\t\t\tNom : " + nom + "\n\t\t\tPrenom :" + prenom + 
+				"\n\t\t\tDate de naissance : " + date_naissance.toString();
+	}
+	
+	
+
+}

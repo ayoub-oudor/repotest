@@ -1,0 +1,29 @@
+package Employe_salary;
+
+public class EmployeCommission extends Employe {
+	private int vent;
+	private double commission;
+	
+	public EmployeCommission(int vent, double commission ){
+		super(nom,prenom,DateNaissance,salaire);       //super(nom,prenom,DateNaissance);
+		this.vent=vent;
+		this.commission=commission;
+	}
+
+	public double SalaireMensuel(int vent, double commission ) {
+		return super.CalculSalaire()+(vent*commission); //(this.vent*this.commission);
+	}
+	
+	
+	
+	public String ToString() {
+		return super.ToString() + "vent : " + vent + "commission :" + commission + "salaire de base : " +SalaireMensuel(vent , commission) );
+		
+	}
+	
+	public void afficherSalaire() {
+		System.out.println(ToString());
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+package Employe_salary;
+
+public class EmployeFixe extends Employe{
+	
+	public EmployeFixe() {
+		super();      //super(nom,prenom,DateNaissance);
+	}	
+	
+	public EmployeFixe(String e1, String string2, String string3, double d) {
+		// TODO Auto-generated constructor stub
+
+	}
+
+	public double SalaireMensuel() {
+		return super.CalculSalaire();
+	}
+	
+	public String toString() {
+		return super.toString();
+	}
+}

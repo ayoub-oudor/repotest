@@ -1,0 +1,20 @@
+package Employe_salary;
+
+public class EmployeCommission extends Employe {
+	private int vent;
+	private double commission;
+	private double salaire;
+
+	public EmployeCommission(String nom, String prenom, String dateNaissance, int vent, double commission) {
+		super(nom, prenom, dateNaissance);
+		this.vent = vent;
+		this.commission = commission;
+	}
+	
+	public String toString() {
+		return super.toString() + "vent : " + vent + "commission :" + commission + "salaire de base : " + super.calculSalaire(salaire);
+		
+	}
+	
+	
+}

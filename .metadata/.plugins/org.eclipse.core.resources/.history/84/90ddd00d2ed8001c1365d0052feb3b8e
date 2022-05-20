@@ -1,0 +1,14 @@
+package Employe_salary;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Employe E1 = new Employe("ayoub","oudor","13-12-2000",10000.00);
+		System.out.println(E1);
+		EmployeFixe E2 = new EmployeFixe("ayoub","oudor","13-12-2000",10000.00);
+		System.out.println(E1);
+		
+	}
+
+}

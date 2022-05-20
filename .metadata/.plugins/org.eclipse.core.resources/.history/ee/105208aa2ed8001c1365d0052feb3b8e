@@ -1,0 +1,18 @@
+package Employe_salary;
+
+public class EmployeFixe extends Employe{
+	
+	public EmployeFixe(String string, String string2, String string3, double d) {
+		super();      //super(nom,prenom,DateNaissance);
+	}	
+	
+
+
+	public double SalaireMensuel() {
+		return super.CalculSalaire();
+	}
+	
+	public String toString() {
+		return super.toString();
+	}
+}

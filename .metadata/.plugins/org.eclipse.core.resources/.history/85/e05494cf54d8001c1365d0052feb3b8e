@@ -1,0 +1,41 @@
+package Employe_salary;
+
+public class EmployeHoraire extends Employe {
+	private double taux_horaire;
+	private double nh;
+	private double salaire;
+	
+	
+	public EmployeHoraire(String nom, String prenom, String dateNaissance, double taux_horaire, double nh) {
+		super(nom, prenom, dateNaissance);
+		this.taux_horaire = taux_horaire;
+		this.nh = nh;
+	}
+	
+	//getters and setters 
+	
+	public double getTaux_horaire() {
+		return taux_horaire;
+	}
+
+	public void setTaux_horaire(double taux_horaire) {
+		this.taux_horaire = taux_horaire;
+	}
+
+	public double getNh() {
+		return nh;
+	}
+
+	public void setNh(double nh) {
+		this.nh = nh;
+	}
+	
+
+	public double calculSalaire(double taux_horaire, double nh) {
+		return taux_horaire * nh ;
+	}
+	
+	public String toString() {
+		return super.toString() +"nombre d'heure : " + nh + "\ntaux horaire : " + taux_horaire + "\nsalaire mensuel : " + calculSalaire(taux_horaire, nh) + "\n" ;
+	}
+}

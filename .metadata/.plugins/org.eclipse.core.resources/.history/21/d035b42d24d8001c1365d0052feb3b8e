@@ -1,0 +1,69 @@
+package Employe_salary;
+
+public class Employe {
+
+	private String nom;
+	private String prenom;
+	private String DateNaissance;
+	private Double salaire;
+
+	public Employe(String nom, String prenom, String dateNaissance, Double salaire) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.DateNaissance = dateNaissance;
+		this.salaire = salaire;
+	}
+
+	// getters
+
+	public String getNom() {
+		return nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public String getDateNaissance() {
+		return DateNaissance;
+	}
+
+	public double getSalaire() {
+		return salaire;
+	}
+
+	// setters
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public void setDateNaissance(String DateNaissance) {
+		this.DateNaissance = DateNaissance;
+	}
+
+	public void setSalaire(double salaire) {
+		this.salaire = salaire;
+	}
+
+	//
+
+	public double CalculSalaire() {
+		return this.getSalaire();
+	}
+
+	//
+	public String toString() {
+				return ("nom : " + nom + "prenom : " + prenom + "date de naissance : " + DateNaissance + "salaire :" + salaire);
+
+	}
+
+	
+	//public void afficherSalaire() { System.out.println(ToString()); }
+	 
+
+}
